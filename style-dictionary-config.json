@@ -1,0 +1,24 @@
+{
+  "source": "design-tokens.json",
+  "platforms": {
+    "json-flat": {
+      "transformGroup": "js",
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "css-variables.json",
+          "format": "json/flat"
+        }
+      ],
+      "transforms": [
+        "attribute/cti",
+        "calc/px",
+        "color/hex",
+        "name/cti/camel",
+        "size/px",
+        "size/rem",
+        "typography"
+      ]
+    }
+  }
+}

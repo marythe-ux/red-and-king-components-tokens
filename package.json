@@ -1,0 +1,40 @@
+{
+  "name": "red-and-king-components-tokens",
+  "author": {
+    "email": "jorge.rojodiseno@gmail.com",
+    "name": "Jorge Rojo"
+  },
+  "repository": "git@github.com:marythe-ux/red-and-king-components-tokens.git",
+  "version": "0.1.1",
+  "private": false,
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "16.11.27",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
+    "react": "^18.2.0",
+    "style-dictionary": "^3.7.0"
+  },
+  "engines": {
+    "node": ">=16.13.0 <17",
+    "yarn": "~1.22.17"
+  },
+  "main": "dist/css-variables.json",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node transformTokens.js && cp design-tokens.json dist/design-tokens.json",
+    "dist": "yarn build && yarn pack",
+    "lint": "eslint --max-warnings=0 'transformTokens.js'",
+    "prepare": "husky install",
+    "prettier": "prettier  --write 'transformTokens.js'"
+  },
+  "dependencies": {
+    "change-case": "^4.1.2"
+  }
+}
