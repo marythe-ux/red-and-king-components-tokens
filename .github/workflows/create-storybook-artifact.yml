@@ -1,4 +1,4 @@
-name: preview
+name: 'Create storybook artifact'
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  preview:
+  create-storybook-artifact:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
