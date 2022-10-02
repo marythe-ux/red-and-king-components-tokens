@@ -1,12 +1,13 @@
 name: preview
 
 on:
-  pull_request:
+  push:
     paths:
       - './design-tokens.json'
-  # push:
-  #   branches:
-  #     - develop
+  pull_request:
+    branches:
+      - 'main'
+      - 'develop'
 
 jobs:
   preview:
