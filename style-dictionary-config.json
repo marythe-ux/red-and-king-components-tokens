@@ -6,7 +6,7 @@
       "buildPath": "dist/",
       "files": [
         {
-          "destination": "css-variables.json",
+          "destination": "style-variables.json",
           "format": "json/flat"
         }
       ],

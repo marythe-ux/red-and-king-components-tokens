@@ -1,0 +1,41 @@
+name: preview
+
+on:
+  pull_request:
+    paths:
+      - './design-tokens.json'
+  # push:
+  #   branches:
+  #     - develop
+
+jobs:
+  preview:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Build style variables
+        run: yarn install --pure-lock && yarn dist
+
+      - name: Clone components repository
+        run: git clone https://github.com/marythe-ux/red-and-king-components.git preview && cd preview && git checkout develop && cd ..
+
+      - name: Install components dependencies
+        run: cd preview && yarn install --pure-lock && cd ..
+
+      - name: inject design tokens to preview
+        run: tar -xzf *.tgz -C preview && cp -r preview/package/*  preview/node_modules/red-and-king-components-tokens
+
+      - name: build preview
+        run: cd preview && yarn build-storybook && cd ..
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          branch: gh-pages
+          folder: preview/docs/storybook
+          clean: true
