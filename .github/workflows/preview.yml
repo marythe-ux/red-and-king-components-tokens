@@ -1,16 +1,20 @@
 name: preview
 
 on:
-  pull_request:
+  push:
     paths:
       - './design-tokens.json'
-  # push:
-  #   branches:
-  #     - develop
+  pull_request:
+    branches:
+      - 'main'
+      - 'develop'
 
 jobs:
   preview:
     concurrency: ci-${{ github.ref }}
+    environment:
+      name: github-pages
+      url: 'https://marythe-ux.github.io/red-and-king-components-tokens'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -33,9 +37,21 @@ jobs:
       - name: build preview
         run: cd preview && yarn build-storybook && cd ..
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          branch: gh-pages
-          folder: preview/docs/storybook
-          clean: true
+          path: './preview/docs/storybook'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4.4.0
+      #   with:
+      #     branch: gh-pages
+      #     folder: preview/docs/storybook
+      #     clean: true
