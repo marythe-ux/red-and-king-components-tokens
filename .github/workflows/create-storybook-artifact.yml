@@ -6,7 +6,7 @@ on:
       - './design-tokens.json'
   pull_request:
     branches:
-      - 'develop'
+      - 'main'
 
   workflow_dispatch:
 
