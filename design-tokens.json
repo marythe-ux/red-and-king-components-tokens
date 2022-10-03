@@ -383,10 +383,6 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": [
-      "topdone-core",
-      "topdone-semantic",
-      "topdone-components"
-    ]
+    "tokenSetOrder": ["topdone-core", "topdone-semantic", "topdone-components"]
   }
 }

@@ -8,6 +8,7 @@
 # testing
 **/coverage/
 **/storybook*/
+**/preview
 
 # production
 /build

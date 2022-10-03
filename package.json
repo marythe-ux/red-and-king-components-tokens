@@ -22,17 +22,18 @@
     "node": ">=16.13.0 <17",
     "yarn": "~1.22.17"
   },
-  "main": "dist/css-variables.json",
+  "main": "dist/style-variables.json",
   "files": [
     "dist",
+    "design-tokens.json",
     "README.md"
   ],
   "scripts": {
-    "build": "node transformTokens.js && cp design-tokens.json dist/design-tokens.json",
+    "build": "node transformTokens.js",
     "dist": "yarn build && yarn pack",
     "lint": "eslint --max-warnings=0 'transformTokens.js'",
     "prepare": "husky install",
-    "prettier": "prettier  --write 'transformTokens.js'"
+    "prettier": "prettier --write 'transformTokens.js'"
   },
   "dependencies": {
     "change-case": "^4.1.2"
