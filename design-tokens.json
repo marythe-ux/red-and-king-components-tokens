@@ -437,7 +437,7 @@
               "type": "spacing"
             },
             "after": {
-              "value": "{margin.medium.right}",
+              "value": "{margin.medium.left}",
               "type": "spacing"
             }
           }
