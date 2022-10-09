@@ -158,8 +158,44 @@
       }
     },
     "spacing": {
-      "base": {
+      "01": {
         "value": "4",
+        "type": "spacing",
+        "unit": "pixel",
+        "description": "This is the base spacing"
+      },
+      "02": {
+        "value": "{spacing.01}*2",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "03": {
+        "value": "{spacing.01}*3",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "04": {
+        "value": "{spacing.01}*4",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "05": {
+        "value": "{spacing.01}*6",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "06": {
+        "value": "{spacing.01}*8",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "08": {
+        "value": "{spacing.01}*12",
+        "type": "spacing",
+        "unit": "pixel"
+      },
+      "09": {
+        "value": "{spacing.01}*16",
         "type": "spacing",
         "unit": "pixel"
       }
@@ -230,31 +266,43 @@
     "padding": {
       "small": {
         "vertical": {
-          "value": "{spacing.base}*2",
+          "value": "{spacing.01}*2",
           "type": "spacing"
         },
         "horizontal": {
-          "value": "{spacing.base}*2",
+          "value": "{spacing.01}*2",
           "type": "spacing"
         }
       },
       "medium": {
         "horizontal": {
-          "value": "{spacing.base}*4",
+          "value": "{spacing.01}*4",
           "type": "spacing"
         },
         "vertical": {
-          "value": "{spacing.base}*3",
+          "value": "{spacing.01}*3",
           "type": "spacing"
         }
       },
       "large": {
         "horizontal": {
-          "value": "{spacing.base}*6",
+          "value": "{spacing.01}*6",
           "type": "spacing"
         },
         "vertical": {
-          "value": "{spacing.base}*4",
+          "value": "{spacing.01}*4",
+          "type": "spacing"
+        }
+      }
+    },
+    "margin": {
+      "medium": {
+        "right": {
+          "value": "{spacing.02}",
+          "type": "spacing"
+        },
+        "left": {
+          "value": "{spacing.02}",
           "type": "spacing"
         }
       }
@@ -378,6 +426,22 @@
         "value": "{radius.cta}",
         "type": "borderRadius",
         "description": "\n"
+      }
+    },
+    "margin": {
+      "button": {
+        "label": {
+          "icon": {
+            "before": {
+              "value": "{margin.medium.right}",
+              "type": "spacing"
+            },
+            "after": {
+              "value": "{margin.medium.right}",
+              "type": "spacing"
+            }
+          }
+        }
       }
     }
   },
