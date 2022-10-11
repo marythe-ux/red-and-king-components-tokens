@@ -5,7 +5,7 @@
     "name": "Jorge Rojo"
   },
   "repository": "git@github.com:marythe-ux/red-and-king-components-tokens.git",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "license": "MIT",
   "devDependencies": {
@@ -16,7 +16,8 @@
     "prettier": "^2.6.2",
     "pretty-quick": "^3.1.3",
     "react": "^18.2.0",
-    "style-dictionary": "^3.7.0"
+    "style-dictionary": "^3.7.0",
+    "change-case": "^4.1.2"
   },
   "engines": {
     "node": ">=16.13.0 <17",
@@ -34,8 +35,5 @@
     "lint": "eslint --max-warnings=0 'transformTokens.js'",
     "prepare": "husky install",
     "prettier": "prettier --write 'transformTokens.js'"
-  },
-  "dependencies": {
-    "change-case": "^4.1.2"
   }
 }

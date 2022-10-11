@@ -266,31 +266,31 @@
     "padding": {
       "small": {
         "vertical": {
-          "value": "{spacing.01}*2",
+          "value": "{spacing.02}",
           "type": "spacing"
         },
         "horizontal": {
-          "value": "{spacing.01}*2",
+          "value": "{spacing.02}",
           "type": "spacing"
         }
       },
       "medium": {
         "horizontal": {
-          "value": "{spacing.01}*4",
+          "value": "{spacing.04}",
           "type": "spacing"
         },
         "vertical": {
-          "value": "{spacing.01}*3",
+          "value": "{spacing.03}",
           "type": "spacing"
         }
       },
       "large": {
         "horizontal": {
-          "value": "{spacing.01}*6",
+          "value": "{spacing.05}",
           "type": "spacing"
         },
         "vertical": {
-          "value": "{spacing.01}*4",
+          "value": "{spacing.04}",
           "type": "spacing"
         }
       }
@@ -447,10 +447,6 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": [
-      "topdone-core",
-      "topdone-semantic",
-      "topdone-components"
-    ]
+    "tokenSetOrder": ["topdone-core", "topdone-semantic", "topdone-components"]
   }
 }
