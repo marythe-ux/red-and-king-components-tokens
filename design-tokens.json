@@ -353,6 +353,20 @@
           "type": "spacing"
         }
       }
+    },
+    "size": {
+      "medium": {
+        "value": "{size.07}",
+        "type": "sizing"
+      },
+      "small": {
+        "value": "{size.06}",
+        "type": "sizing"
+      },
+      "large": {
+        "value": "{size.09}",
+        "type": "sizing"
+      }
     }
   },
   "topdone-components": {
