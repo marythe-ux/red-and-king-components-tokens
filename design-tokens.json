@@ -100,11 +100,24 @@
       "signika-medium": {
         "value": "Medium",
         "type": "fontWeights"
+      },
+      "signika-regular": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "signika-light": {
+        "value": "Light",
+        "type": "fontWeights"
       }
     },
     "fontSize": {
       "2": {
         "value": "14",
+        "type": "fontSizes",
+        "unit": "pixel"
+      },
+      "3": {
+        "value": "16",
         "type": "fontSizes",
         "unit": "pixel"
       },
@@ -153,6 +166,20 @@
           "textDecoration": "{textDecoration.none}"
         },
         "type": "typography"
+      },
+      "signika-body": {
+        "value": {
+          "fontFamily": "{fontFamilies.signika}",
+          "fontWeight": "{fontWeights.signika-light}",
+          "lineHeight": "{lineHeights.11}",
+          "fontSize": "{fontSize.3}",
+          "letterSpacing": "{letterSpacing.4}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "body texts"
       }
     },
     "textCase": {
