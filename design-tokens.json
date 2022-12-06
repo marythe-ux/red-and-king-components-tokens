@@ -100,6 +100,11 @@
         "type": "lineHeights",
         "unit": "pixel"
       },
+      "13": {
+        "value": "32",
+        "type": "lineHeights",
+        "unit": "pixel"
+      },
       "14": {
         "value": "36",
         "type": "lineHeights",
@@ -133,6 +138,11 @@
       },
       "4": {
         "value": "22",
+        "type": "fontSizes",
+        "unit": "pixel"
+      },
+      "5": {
+        "value": "24",
         "type": "fontSizes",
         "unit": "pixel"
       },
@@ -216,6 +226,20 @@
           "fontWeight": "{fontWeights.signika-medium}",
           "lineHeight": "{lineHeights.14}",
           "fontSize": "{fontSize.6}",
+          "letterSpacing": "{letterSpacing.4}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "headline medium style"
+      },
+      "signika-headline-small": {
+        "value": {
+          "fontFamily": "{fontFamilies.signika}",
+          "fontWeight": "{fontWeights.signika-regular}",
+          "lineHeight": "{lineHeights.13}",
+          "fontSize": "{fontSize.5}",
           "letterSpacing": "{letterSpacing.4}",
           "paragraphSpacing": "{paragraphSpacing.0}",
           "textCase": "{textCase.none}",
