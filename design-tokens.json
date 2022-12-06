@@ -468,6 +468,34 @@
               "type": "color"
             }
           }
+        },
+        "avatar": {
+          "highlight": {
+            "default": {
+              "value": "{color.accent.default}",
+              "type": "color"
+            }
+          },
+          "default": {
+            "default": {
+              "value": "{color.purple-50}",
+              "type": "color"
+            }
+          }
+        },
+        "icon": {
+          "on-dark": {
+            "default": {
+              "value": "{color.accent.on}",
+              "type": "color"
+            }
+          },
+          "on-light": {
+            "default": {
+              "value": "{color.dark}",
+              "type": "color"
+            }
+          }
         }
       },
       "border": {
