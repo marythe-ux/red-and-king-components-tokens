@@ -52,6 +52,16 @@
       "transparent": {
         "value": "rgba(0,0,0,0)",
         "type": "color"
+      },
+      "dark": {
+        "value": "#010033",
+        "type": "color",
+        "description": "dark color branding"
+      },
+      "cyan": {
+        "value": "#00F6EA",
+        "type": "color",
+        "description": "cyan branding"
       }
     },
     "radius": {
@@ -273,11 +283,11 @@
           "type": "color"
         },
         "on": {
-          "value": "{color.black}",
+          "value": "{color.dark}",
           "type": "color"
         },
         "hover": {
-          "value": "{color.black}",
+          "value": "{color.dark}",
           "type": "color"
         },
         "hover-on": {
