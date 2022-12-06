@@ -126,6 +126,11 @@
         "type": "fontSizes",
         "unit": "pixel"
       },
+      "3": {
+        "value": "16",
+        "type": "fontSizes",
+        "unit": "pixel"
+      },
       "4": {
         "value": "22",
         "type": "fontSizes",
@@ -182,7 +187,7 @@
           "fontFamily": "{fontFamilies.signika}",
           "fontWeight": "{fontWeights.signika-light}",
           "lineHeight": "{lineHeights.11}",
-          "fontSize": "{fontSize.4}",
+          "fontSize": "{fontSize.3}",
           "letterSpacing": "{letterSpacing.4}",
           "paragraphSpacing": "{paragraphSpacing.0}",
           "textCase": "{textCase.none}",
