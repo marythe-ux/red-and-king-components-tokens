@@ -94,6 +94,16 @@
         "value": "24",
         "type": "lineHeights",
         "unit": "pixel"
+      },
+      "12": {
+        "value": "28",
+        "type": "lineHeights",
+        "unit": "pixel"
+      },
+      "14": {
+        "value": "36",
+        "type": "lineHeights",
+        "unit": "pixel"
       }
     },
     "fontWeights": {
@@ -116,13 +126,13 @@
         "type": "fontSizes",
         "unit": "pixel"
       },
-      "3": {
-        "value": "16",
+      "4": {
+        "value": "22",
         "type": "fontSizes",
         "unit": "pixel"
       },
-      "5": {
-        "value": "24",
+      "6": {
+        "value": "28",
         "type": "fontSizes",
         "unit": "pixel"
       }
@@ -159,7 +169,7 @@
           "fontFamily": "{fontFamilies.signika}",
           "fontWeight": "{fontWeights.signika-medium}",
           "lineHeight": "{lineHeights.11}",
-          "fontSize": "{fontSize.5}",
+          "fontSize": "{fontSize.6}",
           "letterSpacing": "{letterSpacing.4}",
           "paragraphSpacing": "{paragraphSpacing.0}",
           "textCase": "{textCase.none}",
@@ -172,7 +182,7 @@
           "fontFamily": "{fontFamilies.signika}",
           "fontWeight": "{fontWeights.signika-light}",
           "lineHeight": "{lineHeights.11}",
-          "fontSize": "{fontSize.3}",
+          "fontSize": "{fontSize.4}",
           "letterSpacing": "{letterSpacing.4}",
           "paragraphSpacing": "{paragraphSpacing.0}",
           "textCase": "{textCase.none}",
@@ -180,6 +190,34 @@
         },
         "type": "typography",
         "description": "body texts"
+      },
+      "signika-title-large": {
+        "value": {
+          "fontFamily": "{fontFamilies.signika}",
+          "fontWeight": "{fontWeights.signika-regular}",
+          "lineHeight": "{lineHeights.12}",
+          "fontSize": "{fontSize.4}",
+          "letterSpacing": "{letterSpacing.4}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Title Large style"
+      },
+      "signika-headline-medium": {
+        "value": {
+          "fontFamily": "{fontFamilies.signika}",
+          "fontWeight": "{fontWeights.signika-medium}",
+          "lineHeight": "{lineHeights.14}",
+          "fontSize": "{fontSize.6}",
+          "letterSpacing": "{letterSpacing.4}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "headline medium style"
       }
     },
     "textCase": {
